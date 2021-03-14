@@ -48,7 +48,7 @@ func (s *Multilock) Unlock(key string) {
 	}
 }
 
-func NewMultipleLock() *Multilock {
+func NewMultilock() *Multilock {
 	return &Multilock{
 		M: make(map[string]*RefCounter),
 	}
